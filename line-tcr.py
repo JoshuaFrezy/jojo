@@ -15,7 +15,7 @@ print "login success"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-helpMessage =""" Chivas Bot
+helpMessage =""" Mr.J Bot
 [Id︎]
 [Mid]
 [Me︎]
@@ -76,7 +76,7 @@ Bmid = kk.getProfile().mid
 Cmid = kc.getProfile().mid
 
 Bots=[mid,Amid,Bmid,Cmid]
-admin=["YOUR_MID_HERE"]
+admin=["u2b457b1ef8391ee451c9a22c835e1e33,u880ee16541e4a34cd0f0dfc6a7e64833,u9cd8087eecc1de702fbb2a00dcd99d45"]
 wait = {
     'contact':True,
     'autoJoin':True,
@@ -396,8 +396,8 @@ def bot(op):
         if op.type == 26:
             msg = op.message
             if msg.toType == 0:
-                msg.to = msg.from_
-                if msg.from_ == profile.mid:
+                msg.to = msg.from_admin
+                if msg.from_admin == profile.mid:
                     if "join:" in msg.text:
                         list_ = msg.text.split(":")
                         try:
