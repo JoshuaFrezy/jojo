@@ -396,7 +396,7 @@ def bot(op):
         if op.type == 26:
             msg = op.message
             if msg.toType == 0:
-                msg.to = msg.from_admin
+                msg.to = msg.from_
                 if msg.from_admin == profile.mid:
                     if "join:" in msg.text:
                         list_ = msg.text.split(":")
